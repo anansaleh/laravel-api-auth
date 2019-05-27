@@ -104,6 +104,56 @@ That's it
 | /api/transactions/{transaction_id} | get | Transaction detail |
 | /api/transactions/daily-sum | get | Sum daily all transactions |
 
+## API JSON Request (fot post methods):
+### Login (/api/login)
+```json
+        {
+            "email": "string",
+            "password": "string"
+        }
+```
+
+
+### New customer: (/api/customers/new)
+```json
+{
+	"name": "string",
+	"email": "string",
+	"phone": "string"
+}
+```
+### Update customer: (/api/customers/edit/customer_id)
+```json
+{
+	"name": "string",
+	"email": "string",
+	"phone": "string"
+}
+```
+
+### New Transaction: (/api/customers/{customer_id}/transactions/add)
+```json
+{
+	"amount": 0.00
+}
+```
+### Update Transaction:  (/api/customers/{customer_id}/transactions/update)
+```json
+{
+	"transaction_id": 0,
+	"amount": 0.00
+}
+```
+
+### Update Transaction:  (/api/customers/{customer_id}/transactions/delete)
+```json
+{
+	"transaction_id": 0
+}
+```
+
+
+
 ## CRON
 This project has one cron job command. to execute command run
 ```$xslt
@@ -159,54 +209,6 @@ this will enable event in mysql.
 - Open file ```database/migrations/event/event_transaction_sum.sql``` and change line (4) with date and time yu want to start this schedule.
 - final run ```php artisan migrate``` and this will create the event in DB.
 
-
-## API JSON Request in post methods:
-### Login
-```json
-        {
-            "email": "string",
-            "password": "string"
-        }
-```
-
-
-### New customer: (/api/customers/new)
-```json
-{
-	"name": "string",
-	"email": "string",
-	"phone": "string"
-}
-```
-### Update customer: (/api/customers/edit/customer_id)
-```json
-{
-	"name": "string",
-	"email": "string",
-	"phone": "string"
-}
-```
-
-### New Transaction: (/customers/{customer_id}/transactions/add)
-```json
-{
-	"amount": 0.00
-}
-```
-### Update Transaction:  (/customers/{customer_id}/transactions/update)
-```json
-{
-	"transaction_id": 0,
-	"amount": 0.00
-}
-```
-
-### Update Transaction:  (/customers/{customer_id}/transactions/delete)
-```json
-{
-	"transaction_id": 0
-}
-```
 
 
 
