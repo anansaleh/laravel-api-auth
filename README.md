@@ -146,10 +146,10 @@ this will open the crontab file, add the follwing line at the end of file
     47 23 */2 * * php /path-to-your-project/artisan schedule:run >> /dev/null 2>&1
 ```
 
-### Other solution for cron job
+## Other solution for CRON job
 For these type cron jobs that has work on DB only (update or insert) and when we use Mysql
 I prefere to use mysql event schedule. I have make this event and put it in folder ```database/migrations/event```  
-#### use mysql event instead of cronjob.
+### use mysql event instead of cronjob.
 if you want to use mysql event then in terminal run the following in mysql:
 ```$xslt
     mysql> SET GLOBAL event_scheduler = ON;
