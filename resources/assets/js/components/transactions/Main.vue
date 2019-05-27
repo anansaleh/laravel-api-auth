@@ -1,0 +1,25 @@
+<template>
+    <div class="transactions-main container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card card-default">
+                    <div class="card-header">Transactions</div>
+
+                    <div class="card-body">
+                        <router-view></router-view>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "transactions-main"
+    }
+</script>
+
+<style scoped>
+
+</style>
