@@ -1,6 +1,9 @@
 # laravel-api-auth
 This create API Rest with Laravel 5.6 Passport Authentication and VUE.js
 This 
+
+![customer transactions](./screenshoot.PNG)
+
 ## Introduction
 Create a API that handles request / responses for a made up BANK. This API should be able to handle the
 following calls and reply in json format:
