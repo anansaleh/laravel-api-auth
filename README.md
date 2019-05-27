@@ -85,6 +85,7 @@ This will insert fake data as the following:
 That's it 
 
 ##API Routes paths
+
 | path | methods | Description |
 |:--------|:--------|:--------|
 | /api/login | post | post user email and password |
