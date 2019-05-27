@@ -84,7 +84,7 @@ This will insert fake data as the following:
 
 That's it 
 
-##API Routes paths
+## API Routes paths
 
 | path | methods | Description |
 |:--------|:--------|:--------|
