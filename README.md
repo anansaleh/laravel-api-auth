@@ -35,7 +35,7 @@ following calls and reply in json format:
 This will install all dependencies for laravel
 
 2- Vue js Installation
-run the following composer command to install Laravel
+run the following composer command to node models and vue js
 ```  
     npm install
 ```
